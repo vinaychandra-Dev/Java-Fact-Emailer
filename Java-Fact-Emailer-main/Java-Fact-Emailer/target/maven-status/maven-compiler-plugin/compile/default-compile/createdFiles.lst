@@ -1,0 +1,7 @@
+com\example\service\FactFetcherService.class
+com\example\model\Result.class
+com\example\service\EmailSenderService.class
+com\example\model\Response.class
+com\example\controller\FactController.class
+com\example\config\SchedulerConfig.class
+com\example\JavaFactEmailerApplication.class
