@@ -26,7 +26,7 @@
 #Ignore Maven build output (includes .class files)
 target/
 
-Ignore sensitive information configuration
+#Ignore sensitive information configuration
 application.properties
 
 #Ignore logs
