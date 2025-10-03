@@ -27,4 +27,8 @@ public class FactController {
             return "Error: " + e.getMessage();
         }
     }
+    @GetMapping("/")
+    public String home() {
+        return "Welcome to Java Fact Emailer! Use /send-fact?email=recipient@example.com to send a fact.";
+    }
 }

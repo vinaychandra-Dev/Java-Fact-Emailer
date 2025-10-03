@@ -16,8 +16,8 @@ public class FactEmailScheduler {
     @Value("${recipient.email:default@example.com}")
     private String recipientEmail;
 
-    @Scheduled(fixedRate = 60000)
-//    @Scheduled(cron = "0 30 3 * * ?") // 3:30 AM UTC = 9:00 AM IST
+//    @Scheduled(fixedRate = 60000)
+    @Scheduled(cron = "0 30 3 * * ?") // 3:30 AM UTC = 9:00 AM IST
     public void sendDailyFact() {
         if (recipientEmail == null || recipientEmail.trim().isEmpty()) {
             System.err.println("Scheduler error: Recipient email is null or empty");
